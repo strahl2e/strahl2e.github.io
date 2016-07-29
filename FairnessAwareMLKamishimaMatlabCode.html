@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+        <meta charset=”utf-8”>
+        <title>Fairness-aware classifier with prejudice remover regulariser MATLAB implementation</title>
+        <meta name=”description” content=”Description of and links to the MATLAB code implementation of a Fairness-aware classifier with prejudice remover regulariser.”>
+        <meta name=”author” content=”JStrahl”>
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+</head>
+<body>
+        <div id=”wrapper”>
+                <header class=”main_headline”>
+                        <h1>Fairness-aware classifier with prejudice remover regulariser MATLAB implementation</h1>
+                </header>
+                <div id=”primary_content”>
+                        <section id=”left_column”>
+<p><a href="https://github.com/fairml/aalto-seminar-2015/tree/master/Kamishima12-byJStrahl">Link to code</a></p> This is a MATLAB implementation of a classifier that uses a special regularization term that intelligently adjusts the amount of regularisation dependent on the dependence of a feature with a sensitive feature [click for article <a href="http://www.cs.bris.ac.uk/~flach/ECMLPKDD2012papers/1125759.pdf">Kamishima T., et al, 2012, Fairness-aware classifier with Prejudice Remover Regulariser</a>].</p>
+
+<p>Machine learning algorithms have recently been found to be somewhat prejudice. This might sound strange, but after a little thought it makes a lot of sense. A machine learning algorithm used to decide if a person is eligible or not, a risk or not, or make some other decision (a classification problem), maybe for a mortgage, or insurance, this algorithm requires historical data to learn a decision model. The algorithm is trained on past data, to find the model that will make decisions most similar to those made in the past; do you see the problem already? In the past, decisions have been made based on race, gender and other features that today are unethical, if not illegal [<a href="http://www.theatlantic.com/business/archive/2014/05/the-racist-housing-policy-that-made-your-neighborhood/371439/">The racist housing policy that made your neighbourhood</a>]. This means that algorithms are using yesterdays (sometimes unethical) decisions to learn how to best decide for today and tomorrow. This has caused a bit of a stir in the government with the Whitehouse publishing a report on ethics in Big Data to address the issue [<a href="https://fcw.com/articles/2016/05/05/big-data-ethics.aspx">White House techies explore the intersection of big data and ethics</a>]. Some comments have been made to simply not use gender or race directly in the algorithms, and these people can't see the big problem. The problem is much more complicated than this though as there are many dependencies within the data from which discrimnation on sex and gender and other sensitive features can be made indirectly. An example above with the redlining of properties in the US (where African-American residents were literally redlined on the maps for insurance decision purposes) is that the use of address would be an indirect decision based on race. This paper addresses decision making on these sensitive features, taking indirect relations into account and adjusting the amount of noise based on how strongly related features are to the sensitive features. 
+
+<p>For further reading on this interesting topic:</p> 
+
+<li>
+<ul><a href="https://washingtontechnology.com/GIG/fcw/Articles/2016/05/23/big-data-fairness.aspx">What can the government do about big data fairness?</a></ul>
+<ul><a href="http://www.fatml.org/">fairness, accountability and transparency in machine learning workshop</a></ul>
+</li>
+                        </section>
+</div>
+</body>
+</html>
